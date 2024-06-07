@@ -1,0 +1,115 @@
+<div class="ensemble">
+
+
+  <section id="haut">
+
+  </section>
+
+
+  <!-- ---------------------------- -->
+
+  <div class="container">
+
+    <p-carousel
+    [value]="cards"
+    [numVisible]="10"
+    [numScroll]="3"
+    [circular]="true">
+    <ng-template let-product pTemplate="item">
+        <div class="custom-card border-1 surface-border border-round m-2 p-3">
+            <div class="custom-card-content mb-3">
+                <div class="relative mx-auto">
+                    <!-- Image or other content can go here -->
+                </div>
+            </div>
+            <div class="custom-card-title mb-3 font-medium">
+                {{ product.title }}
+                <div class="custom-icon-container">
+                    <i class="pi pi-arrow-circle-up custom-icon"></i>
+                </div>
+            </div>
+            <div class="custom-card-footer flex justify-content-between align-items-center">
+                <!-- Footer content -->
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>
+
+<p-carousel [value]="cards2" [numVisible]="5" [numScroll]="3" [circular]="true">
+    <ng-template let-card pTemplate="item">
+        <div class="custom-card2"> <div class="custom-card-content">
+            <h3>{{ card.title }}</h3>
+            <p>{{ card.descriptionLine1 }}</p>
+            <p *ngIf="card.descriptionLine2">{{ card.descriptionLine2 }}</p> </div>
+            <div class="custom-card-footer">
+                <p>{{ card.price }}</p>
+                <p style="color: deeppink">{{ card.change }}</p>
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>
+
+
+    <section id="alaune">
+      <div class="alaune">
+        <h1> À la Une </h1>
+        <div class="main-alaune">
+
+
+          <div class="inner-alaune">
+            <img src="/assets/images/lab1.PNG" alt="">
+          </div>
+
+          <div class="inner-alaune">
+            <img src="/assets/images/lab1.PNG" alt="">
+          </div>
+
+          <div class="inner-alaune">
+            <img src="/assets/images/lab1.PNG" alt="">
+          </div>
+
+          <div class="inner-alaune">
+            <img src="/assets/images/lab1.PNG" alt="">
+          </div>
+
+          <div class="inner-alaune">
+            <img src="/assets/images/lab1.PNG" alt="">
+          </div>
+
+          <div class="inner-alaune">
+            <img src="/assets/images/lab1.PNG" alt="">
+          </div>
+
+        </div>
+      </div>
+      </section>
+
+
+
+    <!-- ------------------------- -->
+
+    <section id="gestioninter">
+      <div class="gestioninter">
+        <h1>Sociétés de Gestion et d'intermédiation</h1>
+      </div>
+      <div class="main-gestioninter">
+
+      </div>
+
+    </section>
+
+
+    <section id="financetv">
+      <div class="financetv">
+        <h1>Finance TV</h1>
+        <div class="main-financetv">
+
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+
+
+</div>

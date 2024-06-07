@@ -1,52 +1,36 @@
-Recueuil d'idée Frontend
-
-Pour avoir app.modules : ng new <name> --no-standalone
-
-
-
-
-
-
-
-
-
-
-
-Header :
-
 <header class="header">
 
-  <div class="container ">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-3 col-sm-3 col-3">
+      <div class="col-md-5 col-sm-5 col-5">
 
 
               <div class="logo-container">
 
-              
-                  <li><img src="assets/images/logo1.jpeg" alt="" class="logo"></li>
-                  <li><span style="color:#7C8893">Les actualités financières en Afrique</span></li>
+
+                  <img src="assets/images/logo1.jpeg" alt="" class="logo">
+
+                  <div class="texte">
+                    <h6 style="color:#7C8893">Les actualités financières en Afrique</h6>
+                  </div>
 
 
               </div>
 
-
-
-
       </div>
 
 
-      <div class="col-md-9 col-sm-9 col-9 text-end">
+      <div class="col-md-7 col-sm-7 col-7 text-end">
         <div class="menu-icon" (click)="openMenue()">
           <i class="{{menu_icon}}"></i>
         </div>
 
         <div class="desktop_menu" [class.mobile_menu] = "menuValue">
           <ul>
-            <li (click)="closeMenue()">BRVM</li>
-            <li (click)="closeMenue()">Bourse</li>
-            <li (click)="closeMenue()">Finances personnelles</li>
-            <li (click)="closeMenue()">Outils</li>
+            <li> <a (click)="closeMenue()" class="dropdown-toggle" href="">BRVM</a></li>
+            <li> <a (click)="closeMenue()" href="">Bourse</a></li>
+            <li> <a (click)="closeMenue()" href="">Finances personnelles</a></li>
+            <li> <a (click)="closeMenue()" href="">Outils</a></li>
           </ul>
         </div>
 

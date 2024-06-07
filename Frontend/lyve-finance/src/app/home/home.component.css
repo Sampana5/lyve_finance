@@ -1,0 +1,108 @@
+section{
+  scroll-snap-align: start;
+}
+
+.ensemble{
+  scroll-snap-type: mandatory;
+  overflow: hidden;
+}
+
+.alaune h1{
+  font-size: 40px;
+  text-align: left;
+  margin-bottom: 20px;
+
+}
+
+
+
+.main-alaune{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+}
+
+.inner-alaune{
+  flex: 1 1 300px;
+}
+
+.inner-alaune img{
+  width: 50%;
+  transition:transform .5s;
+}
+
+.inner-alaune:hover img {
+  width: 50%;
+  transform: scale(1.1);
+}
+
+.gestioninter h1{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+
+.financetv h1{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+
+
+
+/* 1er carroussel */
+
+.custom-card {
+  width: 200px; /* Ajustez la largeur de la carte selon vos besoins */
+  height: 50px; /* Ajustez la hauteur de la carte selon vos besoins */
+}
+
+.custom-card-content {
+  /* Styles pour le contenu principal de la carte */
+}
+
+.custom-card-title {
+  font-size: 18px; /* Taille de police pour le titre */
+  font-weight: bold; /* Met le titre en gras */
+  margin-top: -18px;
+}
+
+.custom-icon {
+  position: relative; /* Pour positionner correctement le pseudo-élément */
+  font-size: 24px; /* Taille de l'icône */
+}
+
+.custom-icon::before {
+  content: ''; /* Créer un pseudo-élément */
+  position: absolute; /* Position absolue par rapport à l'icône parent */
+  width: 100%; /* Taille égale à celle de l'icône */
+  height: 100%; /* Taille égale à celle de l'icône */
+  background-color: green; /* Couleur de fond verte */
+  border-radius: 50%; /* Assurez-vous que le fond est un cercle */
+  z-index: -1; /* Placez le fond derrière l'icône */
+}
+
+.custom-card2 {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.custom-card-content {
+  /* Styles for title, description lines */
+}
+
+.custom-card-footer {
+  /* Styles for price and percentage change */
+}
+
+/* ------------------ */
+
